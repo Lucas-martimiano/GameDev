@@ -10,20 +10,42 @@ public class desafio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Apertar um botao para iniciar o jogo;
         if(Input.anyKeyDown)
         {
+            // Finalizacao do jogo, caso o jogador chegue a 3 pontos
             if (jogador1Pontos == 3)
-                print("Jogador 1 Venceu!!");
-            else if (jogador2Pontos == 3)
-                print("Jogador 2 Venceu!!");
-            else
             {
                 print("Quantidade pontos jogador 1: " + jogador1Pontos);
                 print("Quantidade pontos jogador 2: " + jogador2Pontos);
+                print("Jogador 1 Venceu!!");
+                print("Fim.");
+                this.enabled = false;
+            }
+            else if (jogador2Pontos == 3)
+            {
+                print("Quantidade pontos jogador 1: " + jogador1Pontos);
+                print("Quantidade pontos jogador 2: " + jogador2Pontos);
+                print("Jogador 2 Venceu!!");
+                print("Fim.");
+                this.enabled = false;
+            }    
+            else
+            {
+                // Lógica dos dados
                 jogador1Dado = Random.Range(1, 7);
                 jogador2Dado = Random.Range(1, 7);
+
+                // Placar Jogadores
+                print("---------------------------------");
+                print("Quantidade pontos jogador 1: " + jogador1Pontos);
+                print("Quantidade pontos jogador 2: " + jogador2Pontos);
+                
+                // Sorteio dos dados
                 print("Dado jogador1: " + jogador1Dado);
                 print("Dado jogador2: " + jogador2Dado);
+                
+                // Resultado dos dados
                 if (jogador1Dado > jogador2Dado)
                 {
                     print("Jogador 1 ganhou um ponto");
@@ -34,9 +56,9 @@ public class desafio : MonoBehaviour
                     print("Jogador 2 ganhou um ponto");
                     jogador2Pontos++;
                 }
-                    
                 else
-                    print("Jogue outra rodada");
+                    print("Rodada Empatada, Jogue outra Rodada");
+                print("---------------------------------");
             }
         }
         
