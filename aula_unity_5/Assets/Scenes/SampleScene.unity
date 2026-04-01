@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 714470770}
   - component: {fileID: 714470771}
+  - component: {fileID: 714470772}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -250,7 +251,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714470769}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dbd956022f3c3964db46e8388a65f9b7, type: 3}
   m_Name: 
@@ -258,6 +259,21 @@ MonoBehaviour:
   vida_jogador: 2
   ataque_jogador: 1
   defesa_jogador: 2
+--- !u!114 &714470772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714470769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08d0c95258adc9459c5e6a0303991d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JogoApostas
+  guerreiroA: 0
+  guerreiroB: 1
+  aposta: 101
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
