@@ -162,7 +162,7 @@ public class BatalhaDados : MonoBehaviour
             }
         }
 
-        // Men
+        // Mensagem de Finalização
         if (Input.anyKeyDown && (vida_jogador == 0 || vida_cpu == 0))
         {
             if (vida_jogador == 0)
